@@ -20,16 +20,21 @@ The best-fit line is given by:
 \[
 y = m x + b
 \]
-
+\[
+x_mean = sum(x)/len(x)
+\]
+/[
+y_mean = sum(y)/len(y)
+\]
 Where:
 
 \[
-m = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{\sum (x_i - \bar{x})^2}
+m = \frac{\sum (x_i - x_mean)(y_i - y_mean)}{\sum (x_i - x_mean)^2}
 \]
 
 
 \[
-b = \bar{y} - m \bar{x}
+b = y_mean - m*x_mean
 \]
 
 ---
