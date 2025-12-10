@@ -44,14 +44,14 @@ b = y_mean - m*x_mean
 
 ---
 
-# 📊 Multiple Linear Regression (Without Libraries)
+# Multiple Linear Regression
 
 This project demonstrates **Multiple Linear Regression implemented manually in Python**, without using any external libraries like NumPy or scikit-learn.  
 It helps understand the mathematical logic behind regression and how the coefficients are derived step by step.
 
 ---
 
-## 🧮 Formula Used
+## Formula Used
 
 The regression model is:
 
@@ -75,7 +75,7 @@ B_0 = \bar{Y} - B_1\bar{X_1} - B_2\bar{X_2}
 
 ---
 
-## 🧠 Concept Summary
+##  Concept Summary
 
 - **Goal:** Predict the value of `Y` based on two independent variables, `X1` and `X2`.  
 - **Method:** Uses the least squares approach to minimize the error between predicted and actual values.  
@@ -83,7 +83,7 @@ B_0 = \bar{Y} - B_1\bar{X_1} - B_2\bar{X_2}
 
 ---
 
-## 🧾 Example
+##  Example
 
 **Input:**
 Enter the no of terms : 4
@@ -105,7 +105,7 @@ Enter the x2 : 2
 makefile
 Copy code
 
-**Output:**
+##  Output:
 Gradient B1 : 0.8
 Gradient B2 : 0.2
 Bias B0 : 2.0
@@ -113,7 +113,7 @@ Final Regression Equation : y = 2.0 + 0.8x1 + 0.2x2
 Predicted Value of y at 3.0 and 2.0 is : 4.8000
 ---
 
-## 📘 Key Takeaways
+## Key Takeaways
 
 - Understand how multiple regression coefficients are calculated manually.  
 - Learn the relationship between dependent and independent variables.  
