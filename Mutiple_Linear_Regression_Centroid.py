@@ -16,7 +16,7 @@ def multi_linear_regression(X1, X2, Y, n):
         X2_sum = X2_sum + (X2[i] - X2_mean)**2
         X1_X2 = X1_X2 + (X1[i] - X1_mean) * (X2[i] - X2_mean)
         X1_Y = X1_Y + (X1[i] - X1_mean) * (Y[i] - Y_mean)
-        X2_Y = X2_Y + (X2[i] - X2_mean) * (Y[i] - Y_mean)   # ✅ fixed line
+        X2_Y = X2_Y + (X2[i] - X2_mean) * (Y[i] - Y_mean) 
 
     print(X1_mean, X2_mean, Y_mean, X1_sum, X2_sum, X1_X2, X1_Y, X2_Y)
 
@@ -52,3 +52,4 @@ def main():
 
 
 main()
+
