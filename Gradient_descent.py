@@ -7,21 +7,21 @@ def _Gradient(X,Y,n,B0,B1,A):
     iter = int(input("Enter the no of Iteration : "))
     
     for _ in range(iter):
-        Y_pret  = []
+        Y_predicted  = []
         for i in range(n):
             
-            Y_pret.append(B0 + B1 * X[i])
+            Y_predicted.append(B0 + B1 * X[i])
          
         loss = 0.0
         for i in range(n):
-            loss += (Y_pret[i] - Y[i]) ** 2
+            loss += (Y_predicted[i] - Y[i]) ** 2
         loss /= (2 * n)
             
         dB1 = 0.0 ## dE/dB1
         dB0 = 0.0 ## dE/dB0
         
         for i in range(n):
-            error = Y_pret[i] - Y[i]
+            error = Y_predicted[i] - Y[i]
             dB1 += error*X[i]
             dB0 +=error
     
@@ -51,3 +51,4 @@ def _main():
     _Gradient(X,Y,n,B0,B1,A)
 
 _main()
+
